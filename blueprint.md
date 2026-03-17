@@ -25,10 +25,10 @@ This project is a web-based educational resource dedicated to raising awareness 
     - **Sex Crimes:** Sensitive and informative content on sexual assault, consent, and support for survivors.
 - **Call-to-Action Buttons:** Each section will include "Learn More" buttons to encourage users to explore the topics in greater detail.
 - **Theme Toggle:** A button to switch between light and dark modes for better user experience.
+- **Partnership Form:** A simple contact form for partnership inquiries, integrated with Formspree.
 
 ## Current Plan
 
-1.  **Add Theme Toggle to `index.html`**: Add a button to the HTML for switching themes.
-2.  **Update `style.css` for Theme Switching**: Define light and dark color palettes using CSS variables and apply them based on a class on the `body` element.
-3.  **Update `main.js` for Theme Switching**: Implement a JavaScript function to toggle the theme class on the `body` and store the user's preference in `localStorage`.
-4.  **Push to GitHub**: Commit the changes and push them to the `origin main` branch.
+1.  **Add Partnership Form to `index.html`**: Create a new section for a partnership inquiry form with fields for name, email, and message. The form will submit to the provided Formspree URL.
+2.  **Update `style.css`**: Add styles for the new form section to ensure it matches the overall design of the website.
+3.  **Push to GitHub**: Commit the changes and push them to the `origin main` branch.

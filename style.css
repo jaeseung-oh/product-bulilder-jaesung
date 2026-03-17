@@ -105,3 +105,34 @@ body.dark-theme footer {
     background: var(--header-bg-dark);
     color: var(--header-text-dark);
 }
+
+/* Form Styles */
+#partnership form {
+    display: flex;
+    flex-direction: column;
+}
+
+#partnership label {
+    margin-bottom: 5px;
+}
+
+#partnership input,
+#partnership textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+body.dark-theme #partnership input,
+body.dark-theme #partnership textarea {
+    background-color: #555;
+    color: #f4f4f4;
+    border-color: #777;
+}
+
+#partnership button {
+    width: 100px;
+    align-self: flex-start;
+}
+
