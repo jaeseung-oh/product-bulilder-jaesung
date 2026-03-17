@@ -24,9 +24,11 @@ This project is a web-based educational resource dedicated to raising awareness 
     - **Violence:** Resources and education on recognizing and preventing various forms of violence.
     - **Sex Crimes:** Sensitive and informative content on sexual assault, consent, and support for survivors.
 - **Call-to-Action Buttons:** Each section will include "Learn More" buttons to encourage users to explore the topics in greater detail.
+- **Theme Toggle:** A button to switch between light and dark modes for better user experience.
 
 ## Current Plan
 
-1.  **Modify `index.html`:** Structure the website with a header, navigation, and sections for each topic.
-2.  **Modify `style.css`:** Apply the visual design, including colors, fonts, and layout.
-3.  **Modify `main.js`:** Add interactivity to the website.
+1.  **Add Theme Toggle to `index.html`**: Add a button to the HTML for switching themes.
+2.  **Update `style.css` for Theme Switching**: Define light and dark color palettes using CSS variables and apply them based on a class on the `body` element.
+3.  **Update `main.js` for Theme Switching**: Implement a JavaScript function to toggle the theme class on the `body` and store the user's preference in `localStorage`.
+4.  **Push to GitHub**: Commit the changes and push them to the `origin main` branch.

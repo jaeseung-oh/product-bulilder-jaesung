@@ -1,22 +1,50 @@
 
+:root {
+    --background-color-light: #f4f4f4;
+    --text-color-light: #333;
+    --header-bg-light: #333;
+    --header-text-light: #fff;
+    --section-bg-light: #fff;
+
+    --background-color-dark: #333;
+    --text-color-dark: #f4f4f4;
+    --header-bg-dark: #222;
+    --header-text-dark: #fff;
+    --section-bg-dark: #444;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    background: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+body.dark-theme {
+    background: var(--background-color-dark);
+    color: var(--text-color-dark);
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: var(--header-bg-light);
+    color: var(--header-text-light);
     padding: 1rem 0;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body.dark-theme header {
+    background: var(--header-bg-dark);
+    color: var(--header-text-dark);
 }
 
 header h1 {
     margin: 0;
+    margin-left: 20px;
 }
 
 nav ul {
@@ -30,19 +58,28 @@ nav ul li {
 }
 
 nav a {
-    color: #fff;
+    color: var(--header-text-light);
     text-decoration: none;
 }
+
+body.dark-theme nav a {
+    color: var(--header-text-dark);
+}
+
 
 main {
     padding: 20px;
 }
 
 section {
-    background: #fff;
+    background: var(--section-bg-light);
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 5px;
+}
+
+body.dark-theme section {
+    background: var(--section-bg-dark);
 }
 
 button {
@@ -53,9 +90,18 @@ button {
     cursor: pointer;
 }
 
+#theme-toggle {
+    margin-right: 20px;
+}
+
 footer {
     text-align: center;
     padding: 20px;
-    background: #333;
-    color: #fff;
+    background: var(--header-bg-light);
+    color: var(--header-text-light);
+}
+
+body.dark-theme footer {
+    background: var(--header-bg-dark);
+    color: var(--header-text-dark);
 }
