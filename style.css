@@ -78,6 +78,15 @@ section {
     border-radius: 5px;
 }
 
+section h2 {
+    display: flex;
+    align-items: center;
+}
+
+section h2 i {
+    margin-right: 10px;
+}
+
 body.dark-theme section {
     background: var(--section-bg-dark);
 }

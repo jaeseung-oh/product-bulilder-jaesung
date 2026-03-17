@@ -29,6 +29,7 @@ This project is a web-based educational resource dedicated to raising awareness 
 
 ## Current Plan
 
-1.  **Add Partnership Form to `index.html`**: Create a new section for a partnership inquiry form with fields for name, email, and message. The form will submit to the provided Formspree URL.
-2.  **Update `style.css`**: Add styles for the new form section to ensure it matches the overall design of the website.
-3.  **Push to GitHub**: Commit the changes and push them to the `origin main` branch.
+1.  **Add Font Awesome CDN to `index.html`**: Add the CDN link for Font Awesome to the `<head>` section to make the icon library available.
+2.  **Add Icons to Sections in `index.html`**: Insert icons into the `<h2>` tags for each educational section (Drunk Driving, Violence, Sex Crimes).
+3.  **Update `style.css`**: Add styling for the new icons to ensure proper alignment and visual consistency.
+4.  **Push to GitHub**: Commit the changes and push them to the `origin main` branch.
