@@ -9,9 +9,9 @@ This project is a web-based educational resource dedicated to raising awareness 
 
 ### Visual Design
 
-- **Aesthetics:** The website will have a clean, professional, and trustworthy design. The layout will be visually balanced with ample white space to improve readability.
-- **Color Palette:** A sophisticated color scheme will be used, combining calming blues and grays with accent colors to draw attention to key information.
-- **Typography:** Clear and legible fonts will be chosen, with a strong hierarchy for headings, subheadings, and body text to guide the user through the content.
+- **Aesthetics:** The website will have a clean, professional, and trustworthy design. The layout will be visually balanced with ample white space to improve readability. A modern and sophisticated look and feel will be achieved through updated fonts, colors, and shadows.
+- **Color Palette:** A sophisticated color scheme will be used, combining calming blues and grays with accent colors to draw attention to key information. The new palette will be more vibrant and modern.
+- **Typography:** Clear and legible fonts will be chosen, with a strong hierarchy for headings, subheadings, and body text to guide the user through the content. Google Fonts will be used for a more distinct typographic style.
 - **Iconography:** Each section (Drunk Driving, Violence, Sex Crimes) will be represented by a unique and intuitive icon to enhance visual communication.
 - **Interactivity:** Buttons and other interactive elements will have subtle hover effects and shadows to provide a sense of depth and responsiveness.
 
@@ -29,7 +29,10 @@ This project is a web-based educational resource dedicated to raising awareness 
 
 ## Current Plan
 
-1.  **Add Font Awesome CDN to `index.html`**: Add the CDN link for Font Awesome to the `<head>` section to make the icon library available.
-2.  **Add Icons to Sections in `index.html`**: Insert icons into the `<h2>` tags for each educational section (Drunk Driving, Violence, Sex Crimes).
-3.  **Update `style.css`**: Add styling for the new icons to ensure proper alignment and visual consistency.
-4.  **Push to GitHub**: Commit the changes and push them to the `origin main` branch.
+1.  **Add Google Fonts to `index.html`**: Add the CDN link for Google Fonts ('Poppins' and 'Roboto') to the `<head>` section.
+2.  **Update `style.css` with new design**: 
+    *   Update the `:root` color variables with a new, modern color palette.
+    *   Apply the new fonts to the `body` and headings.
+    *   Add box shadows and transitions to sections and buttons for a more dynamic feel.
+    *   Refine the layout and spacing for better visual balance.
+3.  **Push to GitHub**: Commit the changes and push them to the `origin main` branch.

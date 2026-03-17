@@ -1,25 +1,28 @@
 
 :root {
-    --background-color-light: #f4f4f4;
-    --text-color-light: #333;
-    --header-bg-light: #333;
-    --header-text-light: #fff;
-    --section-bg-light: #fff;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color-light: #f8f9fa;
+    --text-color-light: #212529;
+    --header-bg-light: #ffffff;
+    --section-bg-light: #ffffff;
+    --box-shadow-light: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 
-    --background-color-dark: #333;
-    --text-color-dark: #f4f4f4;
-    --header-bg-dark: #222;
-    --header-text-dark: #fff;
-    --section-bg-dark: #444;
+    --background-color-dark: #121212;
+    --text-color-dark: #e0e0e0;
+    --header-bg-dark: #1e1e1e;
+    --section-bg-dark: #2c2c2c;
+    --box-shadow-dark: 0 0.5rem 1rem rgba(255, 255, 255, 0.05);
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background: var(--background-color-light);
     color: var(--text-color-light);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 body.dark-theme {
@@ -29,90 +32,138 @@ body.dark-theme {
 
 header {
     background: var(--header-bg-light);
-    color: var(--header-text-light);
-    padding: 1rem 0;
+    color: var(--text-color-light);
+    padding: 1.5rem 2rem;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: var(--box-shadow-light);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 body.dark-theme header {
     background: var(--header-bg-dark);
-    color: var(--header-text-dark);
+    color: var(--text-color-dark);
+    box-shadow: var(--box-shadow-dark);
 }
 
 header h1 {
     margin: 0;
-    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
 }
 
 nav ul {
     padding: 0;
     list-style: none;
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav a {
-    color: var(--header-text-light);
+    color: var(--text-color-light);
     text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
 }
 
 body.dark-theme nav a {
-    color: var(--header-text-dark);
+    color: var(--text-color-dark);
 }
 
+nav a:hover {
+    color: var(--primary-color);
+}
 
 main {
-    padding: 20px;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 section {
     background: var(--section-bg-light);
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 5px;
+    margin-bottom: 2rem;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow-light);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-section h2 {
-    display: flex;
-    align-items: center;
-}
-
-section h2 i {
-    margin-right: 10px;
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 
 body.dark-theme section {
     background: var(--section-bg-dark);
+    box-shadow: var(--box-shadow-dark);
 }
 
-button {
-    background: #333;
+body.dark-theme section:hover {
+    box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.07);
+}
+
+section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+section h2 i {
+    margin-right: 15px;
+    font-size: 1.8rem;
+}
+
+button, #partnership button {
+    background: var(--primary-color);
     color: #fff;
-    border: 0;
-    padding: 10px 15px;
+    border: none;
+    padding: 12px 20px;
     cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover, #partnership button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
 }
 
 #theme-toggle {
+    background-color: var(--secondary-color);
     margin-right: 20px;
+}
+
+#theme-toggle:hover {
+    background-color: #5a6268;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 2rem;
     background: var(--header-bg-light);
-    color: var(--header-text-light);
+    color: var(--text-color-light);
+    margin-top: 2rem;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 body.dark-theme footer {
     background: var(--header-bg-dark);
-    color: var(--header-text-dark);
+    color: var(--text-color-dark);
 }
 
 /* Form Styles */
@@ -122,26 +173,36 @@ body.dark-theme footer {
 }
 
 #partnership label {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    font-weight: 600;
 }
 
 #partnership input,
 #partnership textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: 1px solid #ced4da;
     border-radius: 5px;
+    background-color: #fff;
+    color: #495057;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#partnership input:focus,
+#partnership textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 body.dark-theme #partnership input,
 body.dark-theme #partnership textarea {
-    background-color: #555;
-    color: #f4f4f4;
-    border-color: #777;
+    background-color: #3b3b3b;
+    color: #e0e0e0;
+    border-color: #555;
 }
 
 #partnership button {
-    width: 100px;
+    width: 150px;
     align-self: flex-start;
 }
-
