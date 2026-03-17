@@ -1,0 +1,14 @@
+{
+  "name": "crime-prevention-education",
+  "version": "1.0.0",
+  "description": "Crime Prevention Education Website",
+  "main": "main.js",
+  "scripts": {
+    "start": "http-server -c-1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
