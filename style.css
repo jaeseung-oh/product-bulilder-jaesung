@@ -99,18 +99,9 @@ section {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-}
-
 body.dark-theme section {
     background: var(--section-bg-dark);
     box-shadow: var(--box-shadow-dark);
-}
-
-body.dark-theme section:hover {
-    box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.07);
 }
 
 section h2 {
